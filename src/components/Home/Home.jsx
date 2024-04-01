@@ -66,6 +66,7 @@ function Home() {
           </div>
           <div className={styles.myWorkCover}>
             <Link
+              to={'https://www.instagram.com/sabrina_textile_uniques/'}
               style={{
                 display: 'flex',
                 justifyContent: 'center',
