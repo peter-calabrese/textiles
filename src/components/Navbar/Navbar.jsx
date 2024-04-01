@@ -21,6 +21,19 @@ const Navbar = () => {
           <Link to='/shop'>Contact Us</Link>
         </li>
       </ul>
+      {isOpen && (
+        <ul className={styles.navbarMobileItems}>
+          <li>
+            <Link to='/shop'>Shop</Link>
+          </li>
+          <li>
+            <Link to='/shop'>About Us</Link>
+          </li>
+          <li>
+            <Link to='/shop'>Contact Us</Link>
+          </li>
+        </ul>
+      )}
     </nav>
   );
 };

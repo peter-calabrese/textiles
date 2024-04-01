@@ -1,5 +1,5 @@
 .navbar {
-  position: sticky;
+  position: relative;
   width: auto;
   display: flex;
   align-items: center;
@@ -34,6 +34,22 @@
 .navbarItems a:hover {
   color: var(--primary);
 }
+
+.navbarMobileItems {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  top: 3rem;
+  border: 1px solid;
+  background-color: var(--bg);
+  gap: 1rem;
+  font-size: 28px;
+  padding: 0.5rem;
+}
+
 @media only screen and (max-width: 600px) {
   .navbar p {
     font-size: 1.5rem;
