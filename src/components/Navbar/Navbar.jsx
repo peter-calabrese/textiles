@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className={styles.navbar}>
-      <Link to={'/'}>
+      <Link onClick={() => setIsOpen(false)} to={'/'}>
         <p>Sabrina Textile Uniques</p>
       </Link>
       <BurgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -24,13 +24,19 @@ const Navbar = () => {
       {isOpen && (
         <ul className={styles.navbarMobileItems}>
           <li>
-            <Link to='/shop'>Shop</Link>
+            <Link onClick={() => setIsOpen(false)} to='/shop'>
+              Shop
+            </Link>
           </li>
           <li>
-            <Link to='/shop'>About Us</Link>
+            <Link onClick={() => setIsOpen(false)} to='/shop'>
+              About Us
+            </Link>
           </li>
           <li>
-            <Link to='/shop'>Contact Us</Link>
+            <Link onClick={() => setIsOpen(false)} to='/shop'>
+              Contact Us
+            </Link>
           </li>
         </ul>
       )}
