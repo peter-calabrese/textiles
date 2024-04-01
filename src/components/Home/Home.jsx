@@ -67,6 +67,8 @@ function Home() {
           <div className={styles.myWorkCover}>
             <Link
               to={'https://www.instagram.com/sabrina_textile_uniques/'}
+              target='_blank'
+              rel='noopener noreferrer'
               style={{
                 display: 'flex',
                 justifyContent: 'center',
