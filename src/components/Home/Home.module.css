@@ -1,0 +1,143 @@
+.homeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100vw;
+  height: 100vh;
+}
+.introWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.introWrapper small {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  color: rgba(100, 100, 111, 0.9);
+}
+.introWrapper h3 {
+  font-size: 4rem;
+  width: 600px;
+  margin: 0;
+  padding: 0;
+}
+.introWrapper button {
+  width: 150px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+.mainImage {
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  object-fit: cover;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.downArrow {
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  /* transform: scale(1.5); */
+
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.extraImagesWrapper {
+  display: flex;
+  display: none;
+
+  gap: 1rem;
+
+  width: 100%;
+}
+.extraImages {
+  width: 300px;
+  height: 250px;
+  border-radius: 1rem;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  object-fit: cover;
+}
+
+.myWork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.myWork h3 {
+  font-size: 2rem;
+}
+.display {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+.myWorkCover {
+  height: 200px;
+  width: 634px;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), var(--bg));
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 1.5rem;
+}
+.myWorkCover a {
+  text-decoration: none;
+  color: var(--text);
+}
+.myWorkCover a:hover {
+  color: var(--primary);
+}
+@media only screen and (max-width: 600px) {
+  .homeWrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+  }
+  .mainImage {
+    width: 80%;
+  }
+  .introWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .introWrapper h3 {
+    font-size: 2rem;
+    width: 80%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+  }
+
+  .introWrapper small {
+    width: 70%;
+    text-align: center;
+  }
+  .downArrow {
+    display: none;
+  }
+}
