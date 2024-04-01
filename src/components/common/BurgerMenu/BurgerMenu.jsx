@@ -1,7 +1,13 @@
 import { useState } from 'react';
 import styles from './BurgerMenu.module.css';
+import { useEffect } from 'react';
 const BurgerMenu = ({ setIsOpen, isOpen }) => {
   const [toggle, setToggle] = useState(false);
+  useEffect(() => {
+    if (!isOpen) {
+      setToggle(false);
+    }
+  }, [isOpen]);
   return (
     <div
       onClick={() => {
