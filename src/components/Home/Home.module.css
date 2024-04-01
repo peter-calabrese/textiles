@@ -88,6 +88,7 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 1rem;
   row-gap: 1rem;
+  transition: all 0.2s ease-in-out;
 }
 .myWorkCover {
   height: 200px;
@@ -100,6 +101,11 @@
   justify-content: center;
   align-items: end;
   font-size: 1.5rem;
+}
+.display img:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 .myWorkCover a {
   text-decoration: none;
