@@ -4,7 +4,7 @@ import ThirdImage from '../../assets/textile3.jpeg';
 import { motion } from 'framer-motion';
 import DownArrow from '../../assets/DownArrow';
 import styles from './Home.module.css';
-import MyImage from './MyImge';
+import MyImage from './MyImage';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -30,7 +30,7 @@ function Home() {
     ThirdImage,
   ];
   return (
-    <div style={{ height: '200vh' }}>
+    <div className={styles.container}>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -58,7 +58,7 @@ function Home() {
 
       <div className={styles.myWork}>
         <h3>My Work</h3>
-        <div style={{ width: 'fit-content' }}>
+        <div className={styles.imageGallary}>
           <div className={styles.display}>
             {images.map((image) => (
               <MyImage image={image} />

@@ -1,3 +1,6 @@
+.container {
+  height: 200vh;
+}
 .homeWrapper {
   display: flex;
   justify-content: center;
@@ -92,7 +95,7 @@
 }
 .myWorkCover {
   height: 200px;
-  width: 634px;
+  width: 632px;
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), var(--bg));
   position: absolute;
   bottom: 0;
@@ -122,7 +125,7 @@
     margin-top: 8rem;
   }
   .mainImage {
-    width: 80%;
+    width: 90%;
   }
   .introWrapper {
     display: flex;
@@ -140,10 +143,32 @@
   }
 
   .introWrapper small {
-    width: 70%;
+    width: 80%;
     text-align: center;
   }
   .downArrow {
     display: none;
+  }
+  .myWork {
+    height: 600px;
+    overflow: hidden;
+  }
+  .imageGallary {
+    height: 600px;
+    overflow: hidden;
+  }
+  .display {
+    column-gap: 8px;
+    row-gap: 8px;
+  }
+  .container {
+    height: fit-content;
+  }
+  .myWorkCover {
+    width: 376px;
+  }
+  .display img:hover {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
   }
 }
