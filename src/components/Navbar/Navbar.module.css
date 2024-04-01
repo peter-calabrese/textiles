@@ -1,8 +1,6 @@
 .navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: sticky;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,6 +36,9 @@
 }
 @media only screen and (max-width: 600px) {
   .navbar p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+  .navbarItems {
+    display: none;
   }
 }

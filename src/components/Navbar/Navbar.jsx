@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
+import BurgerMenu from '../common/BurgerMenu/BurgerMenu';
+import { useState } from 'react';
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className={styles.navbar}>
       <Link to={'/'}>
         <p>Sabrina Textile Uniques</p>
       </Link>
-
+      <BurgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
       <ul className={styles.navbarItems}>
         <li>
           <Link to='/shop'>Shop</Link>
