@@ -2,8 +2,6 @@ import MainImage from '../../assets/textile1.jpeg';
 import SecondImage from '../../assets/textile2.jpeg';
 import ThirdImage from '../../assets/textile3.jpeg';
 import { motion } from 'framer-motion';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import DownArrow from '../../assets/DownArrow';
 import styles from './Home.module.css';
 import MyImage from './MyImge';
@@ -67,7 +65,25 @@ function Home() {
             ))}
           </div>
           <div className={styles.myWorkCover}>
-            <Link>See more</Link>
+            <Link
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              See more
+              <div
+                style={{
+                  transform: 'rotate(-90deg)',
+                  padding: 0,
+                  marginLeft: 2,
+                  marginTop: 4,
+                }}
+              >
+                <DownArrow />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
